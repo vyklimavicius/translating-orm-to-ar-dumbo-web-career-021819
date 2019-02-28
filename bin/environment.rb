@@ -6,6 +6,7 @@ require 'active_record'
 require_relative '../lib/dog'
 require_relative 'sql_runner'
 
+# Establish the connection to the database with a constant.
 DB = ActiveRecord::Base.establish_connection(
       :adapter => "sqlite3",
       :database => "../db/dogs"
